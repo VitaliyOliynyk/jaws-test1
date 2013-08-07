@@ -13,7 +13,18 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  <build>
+      <plugins>
+          <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>exec-maven-plugin</artifactId>
+              <configuration>
+                  <mainClass>eu.vitaliy.jawstest1.App</mainClass>
+              </configuration>
+          </plugin>
 
+      </plugins>
+  </build>
   <dependencies>
     <dependency>
         <groupId>eu.vitaliy.edu.smu.tspell.wordnet</groupId>
